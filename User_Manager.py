@@ -33,4 +33,14 @@ class UserManager:
                 print (e) 
     def login():
         print("USER LOGIN")
+        while True:
+            try:
+                username = input("Please enter username or leave blank to exit.")
+                password = input("Please enter password.")
+                if username in users 
+
+            except ValueError as e:
+                print (e)
+
+
         

@@ -41,9 +41,9 @@ def main():
     while True:
         try:
             if choice == 1:
-                self.register()
+                User_Manager.register()
             elif choice == 2:
-                self.login()
+                User_Manager.login()
             elif choice == 3:
                 exit()
         except ValueError as e:
