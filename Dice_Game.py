@@ -5,6 +5,9 @@ from user import *
 
 
 class DiceGame:
+    def __init__(self, cpu, player):
+        self.player = player
+        self.cup = cpu
     def load_resources():
         pass
     def save_score():
@@ -31,7 +34,7 @@ class DiceGame:
     def logout():
         pass
 
-def main():
+def menu():
     print("Welcome to Dice Game!")
     print("1. Register")
     print("2. Login")
@@ -46,8 +49,10 @@ def main():
                 User_Manager.login()
             elif choice == 3:
                 exit()
+            else: 
+                print("Invalid choice, Please enter a valid input.")
         except ValueError as e:
             print (e)
-main()
+menu()
 
 class 
